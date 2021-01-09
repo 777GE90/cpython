@@ -1237,6 +1237,13 @@ itertools
 Add :func:`itertools.pairwise`.
 (Contributed by Raymond Hettinger in :issue:`38200`.)
 
+ipaddress
+---------
+
+XXX Add :func:`_BaseNetwork.next_network` to support finding the next closest
+network.
+(Contributed by Faisal Mahmood in :issue:`42861`.)
+
 linecache
 ---------
 
