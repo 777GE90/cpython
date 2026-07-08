@@ -721,8 +721,11 @@ dictionaries.
    .. method:: next_network(next_prefix=None)
 
       Finds the next closest network of prefix size *next_prefix*.  If
-      *next_prefix=None*, then the current network prefix will be used.  #doctest: +NORMALIZE_WHITESPACE
+      *next_prefix=None*, then the current network prefix will be used.
       Returns a single network object.
+
+      Raises :exc:`ValueError` if *next_prefix* is out of range or no further
+      network of the requested size exists.
 
          >>> IPv4Network('192.0.2.0/24').next_network()
          IPv4Network('192.0.3.0/24')
