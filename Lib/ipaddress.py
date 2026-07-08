@@ -1119,7 +1119,6 @@ class _BaseNetwork(_IPAddressBase):
         return (self.network_address.is_loopback and
                 self.broadcast_address.is_loopback)
 
-
     def next_network(self, next_prefix=None):
         """Get the next closest network with a specific prefix.
 
